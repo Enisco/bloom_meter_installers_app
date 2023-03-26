@@ -115,7 +115,7 @@ class CameraCaptureModel with ChangeNotifier {
     var downloadUrl = await snapshot.ref.getDownloadURL();
     imageUrl = downloadUrl;
     notifyListeners();
-    DateTime now =  DateTime.now();
+    DateTime now = DateTime.now();
 
     /// Map data
     Map<String, dynamic> data = <String, dynamic>{
